@@ -1,0 +1,52 @@
+# решение 3 класса
+
+package ru.javabegin.training.fastjava2.shop21.start;
+
+import ru.javabegin.training.fastjava2.shop21.objects.Camry50;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Camry50 camry50 = new Camry50();
+        camry50.stop();
+        System.out.println();
+        camry50.drive();
+
+    }
+}
+
+package ru.javabegin.training.fastjava2.shop21.objects;
+
+public class Camry30 {
+
+    public void drive() {
+        System.out.println("Camry30 Drive");
+    }
+
+    public void stop() {
+        System.out.println("Camry30 Stop");
+    }
+}
+
+package ru.javabegin.training.fastjava2.shop21.objects;
+
+public class Camry50 extends Camry30 {
+
+    @Override
+    public void drive() {
+        super.drive();
+        System.out.println("Camry50 Drive");
+    }
+
+//    public void light() {
+//        stop();
+//        super.stop();
+//    }
+
+    @Override
+    public void stop() {
+        super.stop();
+        System.out.println("Camry50 Stop");
+    }
+
+}
