@@ -2,7 +2,7 @@ package ru.javabegin.training.fastjava2.shop16;
 
 /**
  * Отдел
- * название, товары
+ * название, товары....///
  */
 public class Department {
 
