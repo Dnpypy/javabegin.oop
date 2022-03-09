@@ -1,4 +1,4 @@
-package ru.javabegin.training.fastjava2.shop16.goods;
+package ru.javabegin.training.fastjava2.shop20.goods;
 
 /**
  *
