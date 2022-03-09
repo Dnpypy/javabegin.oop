@@ -9,13 +9,7 @@ public class Computer {
     private int ram;
     private String department;
 
-    void on() {
 
-    }
-
-    void off() {
-
-    }
 
     void loadOs() {
 

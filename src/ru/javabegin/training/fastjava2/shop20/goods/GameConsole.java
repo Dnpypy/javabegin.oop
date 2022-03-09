@@ -2,17 +2,13 @@ package ru.javabegin.training.fastjava2.shop20.goods;
 
 /**
  * */
-public class GameConsole {
+public class GameConsole extends Technique{
 
     private String name;
     private int ram;
     private String department;
 
-    void on_game() {
-
-    }
-
-    void off_game() {
+    void loadGame() {
 
     }
 }
