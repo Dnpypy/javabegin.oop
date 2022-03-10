@@ -1,0 +1,80 @@
+# 4 класса решение
+
+package ru.javabegin.training.fastjava2.oop22;
+
+import ru.javabegin.training.fastjava2.oop22.objects.Camry;
+import ru.javabegin.training.fastjava2.oop22.objects.Rav4;
+
+public class Main {
+    public static void main(String[] args) {
+        Rav4 rav4 = new Rav4("50", 40);
+        Camry camry = new Camry("50");
+
+
+    }
+}
+package ru.javabegin.training.fastjava2.oop22.objects;
+
+public class Toyota {
+
+    private String name;
+    private double volume;
+
+    // --------- Конструкторы --------------
+    public Toyota(String name, double volume) {
+        this.name = name;
+        this.volume = volume;
+        System.out.println("Toyota constr");
+    }
+
+    public Toyota(String name) {
+        this.name = name;
+        System.out.println("Toyota constr");
+    }
+
+    public Toyota(double volume) {
+        this.volume = volume;
+    }
+
+//    public Toyota() {
+//
+//    }
+
+    // --------- Геттеры и сеттеры --------------
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getVolume() {
+        return volume;
+    }
+
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
+}
+package ru.javabegin.training.fastjava2.oop22.objects;
+
+public class Camry extends Toyota{
+
+    // Важно чтобы соблюдалось цепочка вызовов конструторов
+    // класс Camry пытается притянуть все конструкторы
+    // Проблема решается созданием пустого конструтора в родит классе
+    public Camry(String name){
+        super(name);
+        System.out.println("Camry constr");
+    }
+}
+package ru.javabegin.training.fastjava2.oop22.objects;
+
+public class Rav4 extends Toyota{
+
+    public Rav4(String name, double volume) {
+        super(name, volume);
+        System.out.println("Rav4 constr");
+    }
+}
