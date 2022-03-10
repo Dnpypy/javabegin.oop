@@ -2,7 +2,7 @@ package ru.javabegin.training.fastjava2.shop22.client;
 
 /**
  * */
-public class Visitor {
+public class Visitor extends Client{
 
     private String name;
 

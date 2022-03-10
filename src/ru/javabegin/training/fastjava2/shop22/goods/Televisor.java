@@ -3,7 +3,7 @@ package ru.javabegin.training.fastjava2.shop22.goods;
 /**
  *
  * */
-public class Televisor extends Technique {
+public class Televisor extends Appliances {
 
     private int model;
     private String firm;

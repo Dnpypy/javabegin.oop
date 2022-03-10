@@ -8,7 +8,7 @@ import ru.javabegin.training.fastjava2.shop22.goods.Department;
  * консультанту
  * • Имя, отдел, занятость
  * */
-public class Consultant {
+public class Consultant extends Employee {
 
     private Department department;
     private String name;
