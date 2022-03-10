@@ -1,8 +1,8 @@
 # решение 3 класса
 
-package ru.javabegin.training.fastjava2.shop21.start;
+package ru.javabegin.training.fastjava2.oop21.start;
 
-import ru.javabegin.training.fastjava2.shop21.objects.Camry50;
+import ru.javabegin.training.fastjava2.oop21.objects.Camry50;
 
 public class Main {
 
@@ -15,7 +15,7 @@ public class Main {
     }
 }
 
-package ru.javabegin.training.fastjava2.shop21.objects;
+package ru.javabegin.training.fastjava2.oop21.objects;
 
 public class Camry30 {
 
@@ -28,7 +28,7 @@ public class Camry30 {
     }
 }
 
-package ru.javabegin.training.fastjava2.shop21.objects;
+package ru.javabegin.training.fastjava2.oop21.objects;
 
 public class Camry50 extends Camry30 {
 
