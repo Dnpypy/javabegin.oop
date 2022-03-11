@@ -1,6 +1,6 @@
-package ru.javabegin.training.fastjava2.shop23.client;
+package ru.javabegin.training.fastjava2.shop24_h.client;
 
-import ru.javabegin.training.fastjava2.shop23.SalesRoom;
+import ru.javabegin.training.fastjava2.shop24_h.SalesRoom;
 
 /**
  * */

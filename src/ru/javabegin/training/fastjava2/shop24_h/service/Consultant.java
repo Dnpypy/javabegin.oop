@@ -1,6 +1,6 @@
-package ru.javabegin.training.fastjava2.shop23.service;
+package ru.javabegin.training.fastjava2.shop24_h.service;
 
-import ru.javabegin.training.fastjava2.shop23.Department;
+import ru.javabegin.training.fastjava2.shop24_h.Department;
 
 /**
  * Помощь посетителю
