@@ -9,7 +9,7 @@ package ru.javabegin.training.fastjava2.shop24_h.service;
  * • Имя */
 
 
-public class Security extends Employee {
+public class Security extends BaseEmployee {
 
 
     private String name;

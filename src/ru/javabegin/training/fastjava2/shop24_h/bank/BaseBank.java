@@ -6,7 +6,7 @@ package ru.javabegin.training.fastjava2.shop24_h.bank;
  * выдача кредита
  * Название, условие кредита
  */
-public class Bank {
+public class BaseBank {
 
     private String name;
     private boolean loanCondition;

@@ -4,7 +4,7 @@ import ru.javabegin.training.fastjava2.shop24_h.SalesRoom;
 
 /**
  * */
-public class Visitor extends SalesRoom {
+public class CommonVisitor extends SalesRoom {
 
     private String name;
 

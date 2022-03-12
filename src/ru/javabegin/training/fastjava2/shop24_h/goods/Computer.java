@@ -1,11 +1,11 @@
 package ru.javabegin.training.fastjava2.shop24_h.goods;
 
-import ru.javabegin.training.fastjava2.shop24_h.Department;
+import ru.javabegin.training.fastjava2.shop24_h.SalesRoom;
 
 /**
  *
  */
-public class Computer extends Department {
+public class Computer extends SalesRoom {
 
     private String name;
     private int ram;

@@ -5,7 +5,7 @@ package ru.javabegin.training.fastjava2.shop24_h.service;
  * Отправка запроса
  * Имя, стаж, банк
  */
-public class Banker extends Employee {
+public class Banker extends BaseEmployee {
 
     private String name;
     private double experience;
