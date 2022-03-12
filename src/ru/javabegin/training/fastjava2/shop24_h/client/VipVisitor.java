@@ -3,17 +3,25 @@ package ru.javabegin.training.fastjava2.shop24_h.client;
 import ru.javabegin.training.fastjava2.shop24_h.SalesRoom;
 
 /**
- * */
-public class VipVisitor extends SalesRoom {
+ *
+ */
+public class VipVisitor extends BaseVisitor {
 
-    private String name;
-    private int amountOfDiscount;
+    // private String name; не нужно опеределять переменную она уже есть
+    // в родительском классе BaseVisitor
+    private float discount;
 
-    void purchaseOfGoodsDiscount() {
-
+    public void buy() {
+        // если скидки нет
+        if (!checkDiscount()) {
+            super.buy(); // как обычный клиент
+        } else {
+            // купить со скидкой
+        }
     }
 
-    void returnOfGoods(){
-
+    private boolean checkDiscount() {
+        return discount > 0;
     }
+
 }

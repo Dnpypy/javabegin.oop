@@ -2,21 +2,21 @@ package ru.javabegin.training.fastjava2.shop24_h.goods;
 
 /**
  * */
-public class HardDrive extends Computer {
+public class HardDrive extends ElectronicDevice {
 
     private int volume;
     private String title;
     private String department;
 
-    void format() {
+    public void format() {
 
     }
 
-    void copy() {
+    public void copy() {
 
     }
 
-    void delete() {
+    public void delete() {
 
     }
 }

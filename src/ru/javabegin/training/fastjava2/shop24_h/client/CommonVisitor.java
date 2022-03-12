@@ -4,15 +4,10 @@ import ru.javabegin.training.fastjava2.shop24_h.SalesRoom;
 
 /**
  * */
-public class CommonVisitor extends SalesRoom {
+public class CommonVisitor extends BaseVisitor {
 
-    private String name;
 
-    void purchaseOfGoods() {
 
-    }
 
-    void returnOfGoods(){
 
-    }
 }

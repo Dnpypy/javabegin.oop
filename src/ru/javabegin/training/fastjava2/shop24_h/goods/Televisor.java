@@ -3,14 +3,12 @@ package ru.javabegin.training.fastjava2.shop24_h.goods;
 /**
  *
  * */
-public class Televisor extends Appliances {
+public class Televisor extends ElectronicDevice {
 
     private int model;
-    private String firm;
-    private String department;
 
 
-    void showChannel() {
+    public void selectChannel() {
 
     }
 }

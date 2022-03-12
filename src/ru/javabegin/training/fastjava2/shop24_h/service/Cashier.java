@@ -2,19 +2,17 @@ package ru.javabegin.training.fastjava2.shop24_h.service;
 
 /**
  * Получение денег
- * • Выдача бонусных карт
- * • Имя, стаж, занятость*/
+ * Выдача бонусных карт
+ *
+ * */
+
 public class Cashier extends BaseEmployee {
 
-    private String name;
-    private double experience;
-    private String employment;
-
-    void ReceivingTheMoney() {
+    public void getMoney() {
 
     }
 
-    void IssuanceOfBonusCards() {
+    public void giveBonusCard() {
 
     }
 

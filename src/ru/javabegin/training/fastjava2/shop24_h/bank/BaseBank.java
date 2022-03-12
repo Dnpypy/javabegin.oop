@@ -9,13 +9,13 @@ package ru.javabegin.training.fastjava2.shop24_h.bank;
 public class BaseBank {
 
     private String name;
-    private boolean loanCondition;
+    private boolean creditDescription;
 
-    void creditHistoryCheck() {
+    void checkInfo() {
 
     }
 
-    void issuanceOfCredit() {
+    void giveCredit() {
 
     }
 

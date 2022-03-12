@@ -1,22 +1,18 @@
 package ru.javabegin.training.fastjava2.shop24_h.service;
 
 /**
- * Помощь посетителю
- * • Передача посетителя другому
- * консультанту
- * • Имя, отдел, занятость
+ * Помощь посетителю/консультация
+ * Передача посетителя другому консультанту
+ *
  * */
 public class Consultant extends BaseEmployee {
 
-    private Department department;
-    private String name;
-    private String employment;
 
-    void assistanceToTheVisitor() {
+    public void consult() {
 
     }
 
-    void transferOfTheVisitorToAnotherConsultant() {
+    public void send() {
 
 
     }

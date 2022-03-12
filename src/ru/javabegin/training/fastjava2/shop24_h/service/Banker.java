@@ -1,17 +1,20 @@
 package ru.javabegin.training.fastjava2.shop24_h.service;
 
+import ru.javabegin.training.fastjava2.shop24_h.bank.BaseBank;
+
 /**
  * Банкир
  * Отправка запроса
- * Имя, стаж, банк
+ * С помощью композиции включается переменная объекта BaseBank, каждый банкир будет иметь ссылку на
+ * конкретный банк(Sberbank, VTB)
+ * В этом классе и наследование extends BaseEmployee
+ * и композиция BaseBank(ссылка)
  */
 public class Banker extends BaseEmployee {
 
-    private String name;
-    private double experience;
-    private String bankName;
+    private BaseBank bank;
 
-    void sendingARequest() {
+    public void sendRequest() {
 
     }
 }
