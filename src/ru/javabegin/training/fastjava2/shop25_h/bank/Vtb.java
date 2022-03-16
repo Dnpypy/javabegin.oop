@@ -1,13 +1,13 @@
 package ru.javabegin.training.fastjava2.shop25_h.bank;
 
-public class Vtb extends BaseBank {
+public class Vtb extends BaseBank implements InfoCredit {
     @Override
-    void checkInfo() {
+    public void checkInfo() {
 
     }
 
     @Override
-    void giveCredit() {
+    public void giveCredit() {
 
     }
 }

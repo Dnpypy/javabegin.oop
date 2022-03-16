@@ -5,7 +5,7 @@ import ru.javabegin.training.fastjava2.shop25_h.SalesRoom;
 /**
  *
  */
-public class Computer extends SalesRoom {
+public class Computer extends SalesRoom implements ElectronicDevice {
 
     private String name;
     private int ram;

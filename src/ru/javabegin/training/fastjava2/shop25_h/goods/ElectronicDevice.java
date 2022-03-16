@@ -4,13 +4,13 @@ package ru.javabegin.training.fastjava2.shop25_h.goods;
 /**
  * Базовый класс
  */
-public class ElectronicDevice extends BaseGoods {
+public interface ElectronicDevice  {
 
-    public void on() {
+    public default void on() {
 
     }
 
-    public void off() {
+    public default void off() {
 
     }
 }
