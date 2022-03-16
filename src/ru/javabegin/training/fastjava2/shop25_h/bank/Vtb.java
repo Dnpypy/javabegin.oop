@@ -1,4 +1,4 @@
-package ru.javabegin.training.fastjava2.shop24_h.bank;
+package ru.javabegin.training.fastjava2.shop25_h.bank;
 
 public class Vtb extends BaseBank {
     @Override
