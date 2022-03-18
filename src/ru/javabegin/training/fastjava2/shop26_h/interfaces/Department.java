@@ -1,4 +1,4 @@
-package ru.javabegin.training.fastjava2.shop26_h.department;
+package ru.javabegin.training.fastjava2.shop26_h.interfaces;
 
 /**
  * @author devonline
