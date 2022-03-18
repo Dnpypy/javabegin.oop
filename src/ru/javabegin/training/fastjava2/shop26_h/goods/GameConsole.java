@@ -1,10 +1,10 @@
 package ru.javabegin.training.fastjava2.shop26_h.goods;
 
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.ElectronicDevice;
+import ru.javabegin.training.fastjava2.shop26_h.interfaces.ElectronicDeviceInterfaces;
 
 /**
  * */
-public class GameConsole extends BaseGoods implements ElectronicDevice {
+public class GameConsole extends BaseGoods implements ElectronicDeviceInterfaces {
 
     private int ram;
 
