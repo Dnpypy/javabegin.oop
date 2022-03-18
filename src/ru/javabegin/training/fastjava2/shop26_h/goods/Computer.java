@@ -6,7 +6,7 @@ import ru.javabegin.training.fastjava2.shop26_h.interfaces.ElectronicDeviceInter
 /**
  *
  */
-public class Computer extends SalesRoom implements ElectronicDeviceInterfaces {
+public class Computer extends ElectronicDevice {
 
     private String name;
     private int ram;

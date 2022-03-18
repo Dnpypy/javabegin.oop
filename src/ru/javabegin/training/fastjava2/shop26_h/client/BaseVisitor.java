@@ -1,10 +1,18 @@
 package ru.javabegin.training.fastjava2.shop26_h.client;
 
-abstract public class BaseVisitor {
+import ru.javabegin.training.fastjava2.shop26_h.interfaces.VisitorInterfaces;
+
+public class BaseVisitor implements VisitorInterfaces {
 
     private String name;
 
-    abstract public void buy() ;
+    @Override
+    public void buy() {
 
-    abstract public void returnOfGoods();
+    }
+
+    @Override
+    public void returnOfGoods() {
+
+    }
 }

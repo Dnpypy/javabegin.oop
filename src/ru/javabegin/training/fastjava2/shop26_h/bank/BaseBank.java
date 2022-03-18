@@ -1,19 +1,35 @@
 package ru.javabegin.training.fastjava2.shop26_h.bank;
 
+import ru.javabegin.training.fastjava2.shop26_h.interfaces.BankInterfaces;
+
 /**
  * Банк
  * проверка кредитной истории
  * выдача кредита
  * Название, условие кредита
  */
-abstract public class BaseBank {
+public class BaseBank implements BankInterfaces {
 
     private String name;
-    private boolean creditDescription;
+    private String creditDescription;
 
-    abstract void checkInfo();
+    @Override
+    public void checkInfo() {
+        //стандартная реализация
+    }
 
-    abstract void giveCredit();
+    @Override
+    public void giveCredit() {
+        //стандартная реализация
+    }
+    @Override
+    public String getName(){
+        //стандартная реализация
+        return name;
+    }
 
-
+    @Override
+    public String getCreditDescription() {
+        return creditDescription;
+    }
 }

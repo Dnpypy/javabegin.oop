@@ -4,7 +4,7 @@ import ru.javabegin.training.fastjava2.shop26_h.interfaces.ElectronicDeviceInter
 
 /**
  * */
-public class HardDrive extends BaseGoods implements ElectronicDeviceInterfaces {
+public class HardDrive extends ElectronicDevice {
 
     private int volume;
     private String title;

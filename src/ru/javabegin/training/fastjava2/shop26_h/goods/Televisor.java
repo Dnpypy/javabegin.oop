@@ -5,7 +5,7 @@ import ru.javabegin.training.fastjava2.shop26_h.interfaces.ElectronicDeviceInter
 /**
  *
  * */
-public class Televisor extends BaseGoods implements ElectronicDeviceInterfaces {
+public class Televisor extends ElectronicDevice {
 
     private int model;
 

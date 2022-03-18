@@ -1,6 +1,7 @@
 package ru.javabegin.training.fastjava2.shop26_h.department;
 
 import ru.javabegin.training.fastjava2.shop26_h.goods.BaseGoods;
+import ru.javabegin.training.fastjava2.shop26_h.interfaces.DepartmentInterfaces;
 import ru.javabegin.training.fastjava2.shop26_h.service.BaseEmployee;
 
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
  *
  *
  */
-abstract public class BaseDepartment {
+public class BaseDepartment implements DepartmentInterfaces {
 
     /**
      * Каждый отдел будет хранить работников BaseEmployee и также коллекция товаров
