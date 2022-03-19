@@ -8,7 +8,7 @@ public class BaseVisitor {
 
     }
 
-    public void returnOfGoods(){
+    public void returnGoods(){
 
     }
 }
