@@ -7,6 +7,11 @@ public class BaseVisitor implements VisitorInterfaces {
     private String name;
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public void buy() {
 
     }

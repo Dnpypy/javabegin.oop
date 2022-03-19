@@ -8,4 +8,6 @@ public interface VisitorInterfaces {
     void buy();
 
     void returnOfGoods();
+
+    String getName();
 }

@@ -7,6 +7,8 @@ import ru.javabegin.training.fastjava2.shop26_h.interfaces.BankInterfaces;
  * проверка кредитной истории
  * выдача кредита
  * Название, условие кредита
+ *
+ * Общая реализация интерфейса BankInterfaces
  */
 public class BaseBank implements BankInterfaces {
 

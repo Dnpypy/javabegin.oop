@@ -12,7 +12,7 @@ public class VipVisitor extends BaseVisitor {
     public void buy() {
         // если скидки нет
         if (!checkDiscount()) {
-            buy(); // как обычный клиент
+            super.buy(); // как обычный клиент
         } else {
             // купить со скидкой
         }
