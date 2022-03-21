@@ -1,7 +1,7 @@
-package ru.javabegin.training.fastjava2.shop26_h.goods;
+package ru.javabegin.training.fastjava2.shop27.goods;
 
-import ru.javabegin.training.fastjava2.shop26_h.department.BaseDepartment;
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.GoodsInterface;
+import ru.javabegin.training.fastjava2.shop27.department.BaseDepartment;
+import ru.javabegin.training.fastjava2.shop27.interfaces.GoodsInterface;
 
 
 /**

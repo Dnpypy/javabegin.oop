@@ -1,4 +1,4 @@
-package ru.javabegin.training.fastjava2.shop26_h.interfaces;
+package ru.javabegin.training.fastjava2.shop27.interfaces;
 
 /**
  * Каждый сотрудник будет иметь имя

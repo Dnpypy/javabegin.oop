@@ -1,8 +1,8 @@
-package ru.javabegin.training.fastjava2.shop26_h.department;
+package ru.javabegin.training.fastjava2.shop27.department;
 
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.DepartmentInterfaces;
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.EmployeeInterface;
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.GoodsInterface;
+import ru.javabegin.training.fastjava2.shop27.interfaces.DepartmentInterfaces;
+import ru.javabegin.training.fastjava2.shop27.interfaces.EmployeeInterface;
+import ru.javabegin.training.fastjava2.shop27.interfaces.GoodsInterface;
 
 import java.util.ArrayList;
 

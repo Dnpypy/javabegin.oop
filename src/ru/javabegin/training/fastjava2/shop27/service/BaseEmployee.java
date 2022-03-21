@@ -1,7 +1,7 @@
-package ru.javabegin.training.fastjava2.shop26_h.service;
+package ru.javabegin.training.fastjava2.shop27.service;
 
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.DepartmentInterfaces;
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.EmployeeInterface;
+import ru.javabegin.training.fastjava2.shop27.interfaces.DepartmentInterfaces;
+import ru.javabegin.training.fastjava2.shop27.interfaces.EmployeeInterface;
 
 /**
  * Базовый класс Сотрудник

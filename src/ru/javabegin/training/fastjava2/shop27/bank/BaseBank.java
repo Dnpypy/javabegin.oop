@@ -1,6 +1,6 @@
-package ru.javabegin.training.fastjava2.shop26_h.bank;
+package ru.javabegin.training.fastjava2.shop27.bank;
 
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.BankInterfaces;
+import ru.javabegin.training.fastjava2.shop27.interfaces.BankInterfaces;
 
 /**
  * Базовый класс Банк

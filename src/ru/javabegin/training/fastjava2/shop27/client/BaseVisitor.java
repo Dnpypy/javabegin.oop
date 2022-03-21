@@ -1,6 +1,6 @@
-package ru.javabegin.training.fastjava2.shop26_h.client;
+package ru.javabegin.training.fastjava2.shop27.client;
 
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.VisitorInterfaces;
+import ru.javabegin.training.fastjava2.shop27.interfaces.VisitorInterfaces;
 
 /**
  * Базовый класс

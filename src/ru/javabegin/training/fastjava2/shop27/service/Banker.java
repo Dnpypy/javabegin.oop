@@ -1,7 +1,6 @@
-package ru.javabegin.training.fastjava2.shop26_h.service;
+package ru.javabegin.training.fastjava2.shop27.service;
 
-import ru.javabegin.training.fastjava2.shop26_h.bank.BaseBank;
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.BankInterfaces;
+import ru.javabegin.training.fastjava2.shop27.interfaces.BankInterfaces;
 
 /**
  * Банкир

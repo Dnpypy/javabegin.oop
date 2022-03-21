@@ -1,8 +1,6 @@
-package ru.javabegin.training.fastjava2.shop25_h.bank;
+package ru.javabegin.training.fastjava2.shop27.bank;
 
-public class Sberbank extends BaseBank{
-
-
+public class Vtb extends BaseBank {
     @Override
     public void checkInfo() {
 
