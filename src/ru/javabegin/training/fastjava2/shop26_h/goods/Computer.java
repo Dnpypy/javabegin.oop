@@ -8,12 +8,10 @@ import ru.javabegin.training.fastjava2.shop26_h.interfaces.ElectronicDeviceInter
  */
 public class Computer extends ElectronicDevice {
 
-    private String name;
+
     private int ram;
-    private String department;
 
-
-    void loadOs() {
+    public void loadOs() {
 
     }
 }

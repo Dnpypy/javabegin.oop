@@ -6,10 +6,6 @@ import ru.javabegin.training.fastjava2.shop26_h.interfaces.GoodsInterface;
 
 import java.util.ArrayList;
 
-/**
- *
- *
- */
 public class BaseDepartment implements DepartmentInterfaces {
 
     /**
@@ -18,9 +14,10 @@ public class BaseDepartment implements DepartmentInterfaces {
      * Список сотрудников
      * Список товаров
      */
-    //...
-    //...
-    ///...
+
+    public String name;
+    ArrayList <GoodsInterface> goodsList;
+    ArrayList <EmployeeInterface> employeeList;
 
     @Override
     public String getName() {
