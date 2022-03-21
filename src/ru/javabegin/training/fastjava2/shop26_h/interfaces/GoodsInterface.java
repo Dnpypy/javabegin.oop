@@ -20,4 +20,6 @@ public interface GoodsInterface {
     DepartmentInterfaces getDepartment();
 
     String getCompany();
+
+
 }

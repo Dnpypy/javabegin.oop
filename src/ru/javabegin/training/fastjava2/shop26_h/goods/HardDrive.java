@@ -1,14 +1,10 @@
 package ru.javabegin.training.fastjava2.shop26_h.goods;
 
-import ru.javabegin.training.fastjava2.shop26_h.interfaces.ElectronicDeviceInterfaces;
-
 /**
  * */
 public class HardDrive extends ElectronicDevice {
 
     private int volume;
-    private String title;
-    private String department;
 
     public void format() {
 
@@ -20,5 +16,15 @@ public class HardDrive extends ElectronicDevice {
 
     public void delete() {
 
+    }
+
+    @Override
+    public void on() {
+        // специфическое включение жесткого диска
+    }
+
+    @Override
+    public void off() {
+        // специфическое включение жесткого диска
     }
 }
