@@ -16,13 +16,6 @@ public abstract class BaseGoods implements GoodsInterface {
     private BaseDepartment department;
     private String company;
 
-    public BaseGoods(double price, boolean hasGuarantee, String name, BaseDepartment department, String company) {
-        this.price = price;
-        this.hasGuarantee = hasGuarantee;
-        this.name = name;
-        this.department = department;
-        this.company = company;
-    }
 
     @Override
     public String getName() {

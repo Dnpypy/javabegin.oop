@@ -22,13 +22,9 @@ public abstract class BaseVisitor implements VisitorInterfaces {
 
     ///....
 
-    public BaseVisitor(String name) {
-        this.name = name;
-    }
+    //..
 
-    public BaseVisitor() {
-
-    }
+    //...
 
     @Override
     public String getName() {

@@ -17,12 +17,6 @@ public abstract class BaseEmployee implements EmployeeInterface {
     private DepartmentInterfaces department;
     private boolean free;
 
-    public BaseEmployee(String name, DepartmentInterfaces department, boolean free) {
-        this.name = name;
-        this.department = department;
-        this.free = free;
-    }
-
     @Override
     public String getName() {
         return name;
