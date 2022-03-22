@@ -4,6 +4,8 @@ import ru.javabegin.training.fastjava2.shop27.interfaces.DepartmentInterfaces;
 import ru.javabegin.training.fastjava2.shop27.interfaces.VisitorInterfaces;
 import ru.javabegin.training.fastjava2.shop27.service.Administrator;
 
+import javax.swing.*;
+import java.io.File;
 import java.util.ArrayList;
 
 
@@ -27,4 +29,6 @@ public class SalesRoom {
     private ArrayList<VisitorInterfaces> visitorList;
 
     private Administrator administrator;
+
+    File file;
 }

@@ -5,9 +5,17 @@ import ru.javabegin.training.fastjava2.shop27.interfaces.VisitorInterfaces;
 /**
  * Базовый класс
  */
-public class BaseVisitor implements VisitorInterfaces {
+public abstract class BaseVisitor implements VisitorInterfaces {
 
     private String name;
+
+    public BaseVisitor(String name) {
+        this.name = name;
+    }
+
+    public BaseVisitor() {
+
+    }
 
     @Override
     public String getName() {

@@ -6,7 +6,7 @@ import ru.javabegin.training.fastjava2.shop27.interfaces.GoodsInterface;
 
 import java.util.ArrayList;
 
-public class BaseDepartment implements DepartmentInterfaces {
+public abstract class BaseDepartment implements DepartmentInterfaces {
 
     /**
      * Базовый класс

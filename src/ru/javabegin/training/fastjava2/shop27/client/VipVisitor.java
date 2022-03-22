@@ -9,6 +9,17 @@ public class VipVisitor extends BaseVisitor {
     // в родительском классе BaseVisitor
     private float discount;
 
+    public VipVisitor(float discount) {
+        super();
+        this.discount = discount;
+    }
+
+    public VipVisitor(String name, float discount) {
+        super(name);
+        this.discount = discount;
+    }
+
+    @Override
     public void buy() {
         // если скидки нет
         if (!checkDiscount()) {

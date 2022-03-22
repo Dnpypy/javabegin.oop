@@ -10,10 +10,15 @@ import ru.javabegin.training.fastjava2.shop27.interfaces.BankInterfaces;
  *
  * Общая реализация интерфейса BankInterfaces
  */
-public class BaseBank implements BankInterfaces {
+public abstract class BaseBank implements BankInterfaces {
 
-    private String name;
-    private String creditDescription;
+    private final String name;
+    private final String creditDescription;
+
+    public BaseBank(String name, String creditDescription) {
+        this.name = name;
+        this.creditDescription = creditDescription;
+    }
 
     @Override
     public void checkInfo() {

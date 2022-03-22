@@ -11,7 +11,7 @@ import ru.javabegin.training.fastjava2.shop27.interfaces.EmployeeInterface;
  * (находится выше всех остальных по иерархии)
  */
 
-public class BaseEmployee implements EmployeeInterface {
+public abstract class BaseEmployee implements EmployeeInterface {
 
     private String name;
     private DepartmentInterfaces department;
