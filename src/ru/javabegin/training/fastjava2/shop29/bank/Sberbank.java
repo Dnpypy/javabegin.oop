@@ -1,4 +1,4 @@
-package ru.javabegin.training.fastjava2.shop27.bank;
+package ru.javabegin.training.fastjava2.shop29.bank;
 
 
 /**

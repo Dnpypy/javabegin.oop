@@ -1,6 +1,6 @@
-package ru.javabegin.training.fastjava2.shop27.service;
+package ru.javabegin.training.fastjava2.shop29.service;
 
-import ru.javabegin.training.fastjava2.shop27.interfaces.DepartmentInterfaces;
+import ru.javabegin.training.fastjava2.shop29.interfaces.DepartmentInterfaces;
 
 /**
  * Помощь посетителю/консультация
