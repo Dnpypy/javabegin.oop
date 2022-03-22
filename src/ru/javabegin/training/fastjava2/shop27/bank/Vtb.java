@@ -7,6 +7,11 @@ public class Vtb extends BaseBank {
     }
 
     @Override
+    protected String getInfo() {
+        return null;
+    }
+
+    @Override
     public void checkInfo() {
 
     }
