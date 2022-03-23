@@ -25,6 +25,8 @@ public abstract class AbstractVisitor implements VisitorInterfaces {
     @Override
     public void buy(GoodsInterface goods) {
         System.out.println(goods.getName());
+
+        //...
     }
 
     @Override
