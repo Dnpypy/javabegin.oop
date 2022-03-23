@@ -8,7 +8,4 @@ import ru.javabegin.training.fastjava2.shop27.department.BaseDepartment;
  */
 public class Plate extends BaseGoods {
 
-    public Plate(double price, boolean hasGuarantee, String name, BaseDepartment department, String company) {
-        super(price, hasGuarantee, name, department, company);
-    }
 }

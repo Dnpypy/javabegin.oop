@@ -8,8 +8,9 @@ import ru.javabegin.training.fastjava2.shop27.interfaces.ElectronicDeviceInterfa
  */
 public class ElectronicDevice extends BaseGoods implements ElectronicDeviceInterfaces {
 
-    public ElectronicDevice(double price, boolean hasGuarantee, String name, BaseDepartment department, String company) {
-        super(price, hasGuarantee, name, department, company);
+
+    public ElectronicDevice(double price, boolean guarantee, String name, BaseDepartment department, String company) {
+        super();
     }
 
     @Override

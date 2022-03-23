@@ -1,7 +1,7 @@
-package ru.javabegin.training.fastjava2.shop27.service;
+package ru.javabegin.training.fastjava2.shop29.service;
 
-import ru.javabegin.training.fastjava2.shop27.interfaces.BankInterfaces;
-import ru.javabegin.training.fastjava2.shop27.interfaces.DepartmentInterfaces;
+import ru.javabegin.training.fastjava2.shop29.interfaces.BankInterfaces;
+import ru.javabegin.training.fastjava2.shop29.interfaces.DepartmentInterfaces;
 
 /**
  * Банкир
@@ -15,14 +15,14 @@ import ru.javabegin.training.fastjava2.shop27.interfaces.DepartmentInterfaces;
  * (т.е. банкир работал не только в одном какомто банке, а любом например,
  * то ставлю любой тип)
  */
-public class Banker extends BaseEmployee {
+public class Banker extends AbstractEmployee {
 
     private BankInterfaces bank;
 
-    public Banker(String name, DepartmentInterfaces department, boolean free) {
+    public Banker(String name, DepartmentInterfaces department, boolean free, BankInterfaces bank) {
         super(name, department, free);
+        this.bank = bank;
     }
-
 
     public void sendRequest() {
 

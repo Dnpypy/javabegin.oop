@@ -1,20 +1,15 @@
-package ru.javabegin.training.fastjava2.shop27.client;
+package ru.javabegin.training.fastjava2.shop29.client;
 
-import ru.javabegin.training.fastjava2.shop27.interfaces.VisitorInterfaces;
+import ru.javabegin.training.fastjava2.shop29.interfaces.GoodsInterface;
+import ru.javabegin.training.fastjava2.shop29.interfaces.VisitorInterfaces;
 
 /**
  * Базовый абстрактный класс посетитель
  */
-public abstract class BaseVisitor implements VisitorInterfaces {
+public abstract class AbstractVisitor implements VisitorInterfaces {
 
     private String name;
 
-    public BaseVisitor(String name) {
-    }
-
-    public BaseVisitor() {
-
-    }
 
     /**
      * можно передать в этот метод любой из товаров
@@ -27,24 +22,19 @@ public abstract class BaseVisitor implements VisitorInterfaces {
      * именно у этого объекта
      */
 
-    ///....
+    @Override
+    public void buy(GoodsInterface goods) {
+        System.out.println(goods.getName());
+    }
 
-    //..
+    @Override
+    public void returnOfGoods(GoodsInterface goods) {
 
-    //...
+    }
 
     @Override
     public String getName() {
         return name;
     }
 
-    @Override
-    public void buy() {
-
-    }
-
-    @Override
-    public void returnOfGoods() {
-
-    }
 }
