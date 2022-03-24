@@ -1,5 +1,6 @@
 package ru.javabegin.training.fastjava2.shop30.client;
 
+import ru.javabegin.training.fastjava2.shop30.goods.Televisor;
 import ru.javabegin.training.fastjava2.shop30.interfaces.GoodsInterface;
 import ru.javabegin.training.fastjava2.shop30.interfaces.VisitorInterfaces;
 
@@ -26,7 +27,9 @@ public abstract class AbstractVisitor implements VisitorInterfaces {
     public void buy(GoodsInterface goods) {
         System.out.println(goods.getName());
 
-        //...
+        if(goods instanceof Televisor) {
+            ((Televisor)goods).selectChannel();
+        }
     }
 
     @Override

@@ -12,10 +12,10 @@ public class Main {
 
         commonVisitor.buy(goods);
 
-        Televisor t = (Televisor) goods;
-        t.selectChannel();
-
-        ((Televisor)goods).selectChannel();
+//        Televisor t = (Televisor) goods;
+//        t.selectChannel();
+//
+//        ((Televisor)goods).selectChannel();
 
 
     }
