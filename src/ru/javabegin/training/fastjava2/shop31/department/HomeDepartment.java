@@ -1,0 +1,4 @@
+package ru.javabegin.training.fastjava2.shop31.department;
+
+public class HomeDepartment extends AbstractDepartment {
+}
