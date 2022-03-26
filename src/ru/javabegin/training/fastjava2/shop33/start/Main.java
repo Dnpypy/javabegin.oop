@@ -1,9 +1,9 @@
-package ru.javabegin.training.fastjava2.shop32.start;
+package ru.javabegin.training.fastjava2.shop33.start;
 
-import ru.javabegin.training.fastjava2.shop32.bank.AbstractBank;
-import ru.javabegin.training.fastjava2.shop32.bank.Sberbank;
-import ru.javabegin.training.fastjava2.shop32.bank.Vtb;
-import ru.javabegin.training.fastjava2.shop32.goods.Televisor;
+import ru.javabegin.training.fastjava2.shop33.bank.AbstractBank;
+import ru.javabegin.training.fastjava2.shop33.bank.Sberbank;
+import ru.javabegin.training.fastjava2.shop33.bank.Vtb;
+import ru.javabegin.training.fastjava2.shop33.goods.Televisor;
 
 import static ru.javabegin.training.fastjava2.shop31.goods.AbstractGoods.DEFAULT_GUARANTEE;
 import static ru.javabegin.training.fastjava2.shop31.goods.AbstractGoods.print;
