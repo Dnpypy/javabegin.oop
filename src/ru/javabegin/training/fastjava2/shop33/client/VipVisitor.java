@@ -11,6 +11,10 @@ public class VipVisitor extends AbstractVisitor {
     // в родительском классе BaseVisitor
     private float discount;
 
+    public VipVisitor(String name, int num) {
+        super();
+    }
+
 
     @Override
     public void buy(GoodsInterface goods) {
@@ -20,6 +24,11 @@ public class VipVisitor extends AbstractVisitor {
         } else {
             // купить со скидкой
         }
+    }
+
+    @Override
+    public void returnOfGoods(GoodsInterface goods) {
+
     }
 
     private boolean checkDiscount() {

@@ -1,6 +1,7 @@
-package ru.javabegin.training.fastjava2.shop33.staff;
+package ru.javabegin.training.fastjava2.shop33.service;
 
 
+import ru.javabegin.training.fastjava2.shop33.department.AbstractDepartment;
 import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
 
 /**
@@ -11,11 +12,7 @@ import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
   */
 
 
-public class Security extends AbstractStaff {
-
-    public Security(String name, DepartmentInterfaces department, boolean free) {
-        super(name, department, free);
-    }
+public class Security extends AbstractEmployee {
 
     void checkVisitor() {
 
@@ -28,4 +25,6 @@ public class Security extends AbstractStaff {
     void closeDoor() {
 
     }
+
+
 }

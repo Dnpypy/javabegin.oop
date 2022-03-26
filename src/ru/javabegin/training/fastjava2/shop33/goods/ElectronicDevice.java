@@ -16,6 +16,12 @@ public class ElectronicDevice extends AbstractGoods implements ElectronicDeviceI
         super(name);
     }
 
+    public ElectronicDevice(int i, boolean b, String smartTv, String samsung) {
+    }
+
+    public ElectronicDevice(int i, boolean b, String book, String ibm, int i1) {
+    }
+
     @Override
     public void on() {
         //общая реализация

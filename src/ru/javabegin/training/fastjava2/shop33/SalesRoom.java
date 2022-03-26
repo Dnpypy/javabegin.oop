@@ -1,10 +1,9 @@
 package ru.javabegin.training.fastjava2.shop33;
 
+
 import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
 import ru.javabegin.training.fastjava2.shop33.interfaces.VisitorInterfaces;
-import ru.javabegin.training.fastjava2.shop33.staff.Administrator;
 
-import java.io.File;
 import java.util.ArrayList;
 
 
@@ -21,15 +20,23 @@ import java.util.ArrayList;
  */
 public class SalesRoom {
 
-    public final String SHOP_NAME = "technodom";
+    public static final String SHOP_NAME = "technodom";
 
-    private ArrayList<DepartmentInterfaces> departmentList; // в каждом департаменте свои сотрудники
+    // в каждом департаменте свои сотрудники
+    private ArrayList<DepartmentInterfaces> departmentList = new ArrayList<DepartmentInterfaces>();
 
-    private String name;
+    private ArrayList<VisitorInterfaces> visitorList = new ArrayList<VisitorInterfaces>();
 
-    private ArrayList<VisitorInterfaces> visitorList;
+    private ArrayList <DepartmentInterfaces> getDepartmentList() {
+        return departmentList;
+    }
 
-    private Administrator administrator;
+    public void addDepartment(DepartmentInterfaces department) {
+        departmentList.add(department);
+    }
 
-    File file;
+    public void addVisitor(VisitorInterfaces visitorInterfaces) {
+        visitorList.add(visitorInterfaces);
+    }
+
 }

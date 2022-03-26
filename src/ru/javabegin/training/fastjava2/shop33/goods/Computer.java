@@ -12,6 +12,10 @@ public class Computer extends ElectronicDevice {
 
     private int ram;
 
+    public Computer(int i, boolean b, String book, String ibm, int i1) {
+        super(i, b, book, ibm, i1);
+    }
+
     public void loadOs() {
 
     }

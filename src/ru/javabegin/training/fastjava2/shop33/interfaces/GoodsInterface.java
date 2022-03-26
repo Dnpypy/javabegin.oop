@@ -19,7 +19,7 @@ public interface GoodsInterface {
 
     DepartmentInterfaces getDepartment();
 
+    void setDepartment(DepartmentInterfaces department);
+
     String getCompany();
-
-
 }

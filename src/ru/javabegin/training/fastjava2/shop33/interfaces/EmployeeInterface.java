@@ -5,10 +5,15 @@ package ru.javabegin.training.fastjava2.shop33.interfaces;
  * Сотрудник должен предоставлять отдел, где он работает
  * Индикатор свободен он или нет
  */
-public interface StaffInterface {
+public interface EmployeeInterface {
 
     String getName();
+
     DepartmentInterfaces getDepartment();
+
+    void setDepartment(DepartmentInterfaces departmentInterfaces);
+
     boolean isFree();
+
 
 }
