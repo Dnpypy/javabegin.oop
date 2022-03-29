@@ -14,12 +14,10 @@ public class Televisor extends ElectronicDevice {
         super(name);
     }
 
-    public Televisor(int i, boolean b, String smartTv, String samsung) {
-        super(i, b, smartTv,samsung);
+    public Televisor(double price, boolean hasGuarantee, String name, String company) {
+        super(price, hasGuarantee, name, company);
     }
-
     public void selectChannel() {
-        System.out.print("Select Channel : ");
 
     }
 

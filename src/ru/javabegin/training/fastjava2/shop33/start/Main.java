@@ -1,6 +1,5 @@
 package ru.javabegin.training.fastjava2.shop33.start;
 
-
 import ru.javabegin.training.fastjava2.shop33.SalesRoom;
 import ru.javabegin.training.fastjava2.shop33.client.CommonVisitor;
 import ru.javabegin.training.fastjava2.shop33.client.VipVisitor;
@@ -9,73 +8,52 @@ import ru.javabegin.training.fastjava2.shop33.department.GameDepartment;
 import ru.javabegin.training.fastjava2.shop33.enums.ConsultResult;
 import ru.javabegin.training.fastjava2.shop33.goods.Computer;
 import ru.javabegin.training.fastjava2.shop33.goods.GameConsole;
+import ru.javabegin.training.fastjava2.shop33.goods.HardDrive;
 import ru.javabegin.training.fastjava2.shop33.goods.Televisor;
-import ru.javabegin.training.fastjava2.shop33.service.Administrator;
-import ru.javabegin.training.fastjava2.shop33.service.Consultant;
+import ru.javabegin.training.fastjava2.shop33.staff.Administrator;
+import ru.javabegin.training.fastjava2.shop33.staff.Consultant;
 
-/**
- * • Реализовать работу приложения
- * <p>
- * • Создание торгового зала
- * <p>
- * Очистить класс Main
- * <p>
- * Создать объект торговый зал
- * <p>
- * Добавить сотрудников в зал и товары
- * <p>
- * • Добавление посетителей
- * <p>
- * • Работа администратора (поиск и предоставление консультанта)
- * <p>
- * • Консультация и покупка товара
- */
+
 public class Main {
     public static void main(String[] args) {
         imitateShopWorking();
     }
 
-    private static void imitateShopWorking(){
-        // Создаем торговый зал
+    private static void imitateShopWorking() {
+
         SalesRoom salesRoom = new SalesRoom();
 
-        // Создаем администратора торгового зала, передаем ему управление торгового зала
         Administrator administrator = new Administrator(salesRoom);
 
-        // Создаем два отдела
         ElectronicDepartment electronicDepartment = new ElectronicDepartment();
         GameDepartment gameDepartment = new GameDepartment();
 
-        // Добавляю отделы в торговый зал
-        salesRoom.addDepartment(electronicDepartment);
-        salesRoom.addDepartment(gameDepartment);
+        salesRoom.add(electronicDepartment);
+        salesRoom.add(gameDepartment);
 
-        // Добавляю сотрудников в каждый отдел
-        Consultant consultant1 = new Consultant("Denis");
-        //  Проверяю свободен ли сотрудник.
+        Consultant consultant1 = new Consultant("Den");
         consultant1.setFree(true);
 
-        Consultant consultant2 = new Consultant("Elena");
+        Consultant consultant2 = new Consultant("Den");
+        consultant2.setFree(true);
 
         electronicDepartment.addEmployee(consultant1);
-        electronicDepartment.addEmployee(consultant2);
+        gameDepartment.addEmployee(consultant2);
 
+        Computer computer = new Computer(200, true, "IBM", "pocketbook", 2048);
+        GameConsole console = new GameConsole(250, "Xbox");
+        HardDrive hardDrive = new HardDrive("TOshiba");
+        Televisor televisor = new Televisor(300, false, "SmartTV", "SAMSUNG");
 
-        // Создаем товары для отделов
-        Computer computer = new Computer(200, true, "Book", "IBM", 2046);
-        Televisor televisor = new Televisor(1000, false, "SmartTv", "Samsung");
-        GameConsole gameConsole = new GameConsole("Xbox", 1024);
-
-        // Добавляем товары в отделы
         electronicDepartment.addGoods(computer);
+        electronicDepartment.addGoods(hardDrive);
         electronicDepartment.addGoods(televisor);
-        gameDepartment.addGoods(gameConsole);
 
-        // Создаем покупателей
-        CommonVisitor commonVisitor = new CommonVisitor("Август");
-        VipVisitor vipVisitor = new VipVisitor("Марк", 50);
+        gameDepartment.addGoods(console);
 
-        // Ищем свободного покупаетя из нужного отдела
+        CommonVisitor commonVisitor = new CommonVisitor("Visitor1");
+        VipVisitor vipVisitor = new VipVisitor("VipVisitor1", 50);
+
         ConsultResult consultResult = administrator.getFreeConsultant(electronicDepartment).consult(commonVisitor);
 
         switch (consultResult) {

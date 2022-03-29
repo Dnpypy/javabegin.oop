@@ -10,9 +10,7 @@ import java.util.ArrayList;
 public interface DepartmentInterfaces {
 
     String getName();
-
-    ArrayList<EmployeeInterface> getEmployeeList();
-
+    ArrayList<StaffInterface> getEmployeeList();
     ArrayList<GoodsInterface> getGoodsList();
 
 }

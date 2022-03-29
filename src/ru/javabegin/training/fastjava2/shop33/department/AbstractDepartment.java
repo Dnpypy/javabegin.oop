@@ -1,9 +1,8 @@
 package ru.javabegin.training.fastjava2.shop33.department;
 
-import ru.javabegin.training.fastjava2.shop33.goods.ElectronicDevice;
 import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
 import ru.javabegin.training.fastjava2.shop33.interfaces.GoodsInterface;
-import ru.javabegin.training.fastjava2.shop33.interfaces.EmployeeInterface;
+import ru.javabegin.training.fastjava2.shop33.interfaces.StaffInterface;
 
 import java.util.ArrayList;
 
@@ -18,12 +17,8 @@ public abstract class AbstractDepartment implements DepartmentInterfaces {
      */
 
     public String name;
-    ArrayList<EmployeeInterface> employeeList = new ArrayList<EmployeeInterface>();
-    ArrayList<GoodsInterface> goodsList = new ArrayList<GoodsInterface>();
-
-
-    public AbstractDepartment() {
-    }
+    ArrayList <GoodsInterface> goodsList = new ArrayList<GoodsInterface>();
+    ArrayList <StaffInterface> employeeList = new ArrayList<StaffInterface>();
 
     @Override
     public String getName() {
@@ -35,8 +30,12 @@ public abstract class AbstractDepartment implements DepartmentInterfaces {
     }
 
     @Override
-    public ArrayList<EmployeeInterface> getEmployeeList() {
+    public ArrayList<StaffInterface> getEmployeeList() {
         return employeeList;
+    }
+
+    public void setEmployeeList(ArrayList<StaffInterface> employeeList) {
+        this.employeeList = employeeList;
     }
 
     @Override
@@ -44,25 +43,20 @@ public abstract class AbstractDepartment implements DepartmentInterfaces {
         return goodsList;
     }
 
-    public abstract void addGoods(ElectronicDevice electronicDevice);
-
-    /**
-     * привязка сотрудника к отделу и добавление его в общую коллекцию
-     *
-     * @param employee сотрудник
-     */
-    public void addEmployee(EmployeeInterface employee) {
-        employee.setDepartment(this); // <--- за данным сотрудником указан конкретный отдел с помощью ключевого слова this
-        employeeList.add(employee);  // <--- и уже добавляем его в общую колекцию
+    public void setGoodsList(ArrayList<GoodsInterface> goodsList) {
+        this.goodsList = goodsList;
     }
 
-    /**
-     * привязка товара к отделу и добавление его в общую коллекцию
-     * @param goods любой товар
-     */
-    public void addGoods(GoodsInterface goods) {
-        goods.setDepartment(this); //<----при добавлении товара для него автоматически прописывается отдел
-        goodsList.add(goods); // <--- и уже добавляем его в общую колекцию
+    public void addEmployee(StaffInterface staff) {
+        staff.setDepartment(this); // при добавлении сотрудника для него автометически прописывается департамент
+        employeeList.add(staff);
+    }
+
+    public void addGoods(GoodsInterface goods){
+        goods.setDepartment(this);
+        goodsList.add(goods); // при добавлении товара для него автометически прописывается департамент
     }
 
 }
+
+

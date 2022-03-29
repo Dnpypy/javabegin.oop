@@ -1,6 +1,7 @@
 package ru.javabegin.training.fastjava2.shop33.goods;
 
 
+import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
 import ru.javabegin.training.fastjava2.shop33.interfaces.ElectronicDeviceInterfaces;
 
 /**
@@ -16,10 +17,8 @@ public class ElectronicDevice extends AbstractGoods implements ElectronicDeviceI
         super(name);
     }
 
-    public ElectronicDevice(int i, boolean b, String smartTv, String samsung) {
-    }
-
-    public ElectronicDevice(int i, boolean b, String book, String ibm, int i1) {
+    public ElectronicDevice(double price, boolean guarantee, String name, String company) {
+        super(price, guarantee, name, company);
     }
 
     @Override
@@ -31,4 +30,5 @@ public class ElectronicDevice extends AbstractGoods implements ElectronicDeviceI
     public void off() {
         //общая реализация
     }
+
 }

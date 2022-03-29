@@ -11,7 +11,7 @@ public class GameConsole extends ElectronicDevice {
         super(name);
     }
 
-    public GameConsole(String xbox, int i) {
+    public GameConsole(int i, String xbox) {
     }
 
 

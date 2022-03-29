@@ -10,13 +10,20 @@ public class Computer extends ElectronicDevice {
         super(name);
     }
 
-    private int ram;
-
-    public Computer(int i, boolean b, String book, String ibm, int i1) {
-        super(i, b, book, ibm, i1);
+    public Computer(String name, int ram) {
+        super(name);
+        this.ram = ram;
     }
 
-    public void loadOs() {
+    public Computer(double price, boolean hasGuarantee, String name, String company, int ram) {
+        super(price, hasGuarantee, name, company);
+        this.ram = ram;
+    }
+
+    private int ram;
+
+
+    public void loadOS(){
 
     }
 }

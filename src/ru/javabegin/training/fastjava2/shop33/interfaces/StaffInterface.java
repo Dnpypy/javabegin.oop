@@ -1,19 +1,22 @@
 package ru.javabegin.training.fastjava2.shop33.interfaces;
 
+import ru.javabegin.training.fastjava2.shop33.department.AbstractDepartment;
+
 /**
  * Каждый сотрудник будет иметь имя
  * Сотрудник должен предоставлять отдел, где он работает
  * Индикатор свободен он или нет
  */
-public interface EmployeeInterface {
+public interface StaffInterface {
 
     String getName();
 
     DepartmentInterfaces getDepartment();
 
-    void setDepartment(DepartmentInterfaces departmentInterfaces);
-
     boolean isFree();
 
+    void setDepartment(DepartmentInterfaces departmentInterfaces);
 
 }
+
+

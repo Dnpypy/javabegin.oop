@@ -1,23 +1,21 @@
-package ru.javabegin.training.fastjava2.shop33.service;
+package ru.javabegin.training.fastjava2.shop33.staff;
 
 import ru.javabegin.training.fastjava2.shop33.SalesRoom;
+import ru.javabegin.training.fastjava2.shop33.department.ElectronicDepartment;
 import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
-import ru.javabegin.training.fastjava2.shop33.interfaces.EmployeeInterface;
+import ru.javabegin.training.fastjava2.shop33.interfaces.StaffInterface;
 
 public class Administrator {
 
-    private final SalesRoom salesRoom;
+    private SalesRoom salesRoom;
 
-    /**
-     * с помощью этого конструктора узнаем к каком торговому залу относится администратор
-     * @param salesRoom торговый зал
-     */
     public Administrator(SalesRoom salesRoom) {
         this.salesRoom = salesRoom;
     }
 
     public Consultant getFreeConsultant(DepartmentInterfaces departmentInterfaces) {
-        for (EmployeeInterface employee : departmentInterfaces.getEmployeeList()) {
+
+        for (StaffInterface employee : departmentInterfaces.getEmployeeList()) {
             if (employee instanceof Consultant) {
                 if (employee.isFree()) {
                     return (Consultant) employee;

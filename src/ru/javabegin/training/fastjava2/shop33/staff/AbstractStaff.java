@@ -1,10 +1,7 @@
-package ru.javabegin.training.fastjava2.shop33.service;
+package ru.javabegin.training.fastjava2.shop33.staff;
 
-import ru.javabegin.training.fastjava2.shop33.SalesRoom;
-import ru.javabegin.training.fastjava2.shop33.department.ElectronicDepartment;
-import ru.javabegin.training.fastjava2.shop33.department.GameDepartment;
 import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
-import ru.javabegin.training.fastjava2.shop33.interfaces.EmployeeInterface;
+import ru.javabegin.training.fastjava2.shop33.interfaces.StaffInterface;
 
 /**
  * Базовый класс Сотрудник
@@ -14,19 +11,17 @@ import ru.javabegin.training.fastjava2.shop33.interfaces.EmployeeInterface;
  * (находится выше всех остальных по иерархии)
  */
 
-public abstract class AbstractEmployee implements EmployeeInterface {
+public abstract class AbstractStaff implements StaffInterface {
 
     private String name;
     private DepartmentInterfaces department;
     private boolean free;
 
-    public AbstractEmployee() {
+    public AbstractStaff(String name, DepartmentInterfaces department, boolean free) {
     }
 
-    public AbstractEmployee(String name) {
+    public AbstractStaff(String den) {
     }
-
-
 
     @Override
     public String getName() {

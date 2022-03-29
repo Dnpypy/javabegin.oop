@@ -1,6 +1,5 @@
-package ru.javabegin.training.fastjava2.shop33.service;
+package ru.javabegin.training.fastjava2.shop33.staff;
 
-import ru.javabegin.training.fastjava2.shop33.department.AbstractDepartment;
 import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
 
 /**
@@ -9,9 +8,11 @@ import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
  *
  * */
 
-public class Cashier extends AbstractEmployee {
+public class Cashier extends AbstractStaff {
 
-
+    public Cashier(String name, DepartmentInterfaces department, boolean free) {
+        super(name, department, free);
+    }
 
     public void getMoney() {
 
@@ -20,6 +21,5 @@ public class Cashier extends AbstractEmployee {
     public void giveBonusCard() {
 
     }
-
 
 }

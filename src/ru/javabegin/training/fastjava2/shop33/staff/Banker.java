@@ -1,6 +1,5 @@
-package ru.javabegin.training.fastjava2.shop33.service;
+package ru.javabegin.training.fastjava2.shop33.staff;
 
-import ru.javabegin.training.fastjava2.shop33.department.AbstractDepartment;
 import ru.javabegin.training.fastjava2.shop33.interfaces.BankInterfaces;
 import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
 
@@ -16,18 +15,16 @@ import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
  * (т.е. банкир работал не только в одном какомто банке, а любом например,
  * то ставлю любой тип)
  */
-public class Banker extends AbstractEmployee {
+public class Banker extends AbstractStaff {
 
     private BankInterfaces bank;
 
-    public Banker(String name) {
-        super(name);
+    public Banker(String name, DepartmentInterfaces department, boolean free, BankInterfaces bank) {
+        super(name, department, free);
+        this.bank = bank;
     }
-
 
     public void sendRequest() {
 
     }
-
-
 }

@@ -13,48 +13,28 @@ public abstract class AbstractGoods implements GoodsInterface {
 
     public static final int DEFAULT_GUARANTEE = 2;
 
-    public AbstractGoods() {
-    }
+    private double price;
+    private boolean guarantee;
+    private String name;
+    private DepartmentInterfaces department;
+    private String company;
 
     public AbstractGoods(String name) {
         this.name = name;
     }
 
-    public AbstractGoods(double price, boolean hasGuarantee, String name, String company) {
+    public AbstractGoods() {
+    }
+
+    public AbstractGoods(double price, boolean guarantee, String name, String company) {
         this.price = price;
-        this.hasGuarantee = hasGuarantee;
+        this.guarantee = guarantee;
         this.name = name;
         this.company = company;
     }
 
-    // свойства, которые будут иметь все товары
-    private double price;
-
-    private boolean hasGuarantee;
-
-    private String name;
-
-    private DepartmentInterfaces department;
-
-    private String company;
-
-
-    @Override
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    @Override
-    public boolean hasGuarantee() {
-        return hasGuarantee;
-    }
-
-    public void setHasGuarantee(boolean hasGuarantee) {
-        this.hasGuarantee = hasGuarantee;
+    public static void print(){
+        System.out.println("DEFAULT_GUARANTEE = " + DEFAULT_GUARANTEE);
     }
 
     @Override
@@ -71,6 +51,7 @@ public abstract class AbstractGoods implements GoodsInterface {
         return department;
     }
 
+
     @Override
     public void setDepartment(DepartmentInterfaces department) {
         this.department = department;
@@ -84,5 +65,24 @@ public abstract class AbstractGoods implements GoodsInterface {
     public void setCompany(String company) {
         this.company = company;
     }
+
+    @Override
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price){
+        this.price = price;
+    }
+
+    @Override
+    public boolean hasGuarantee() {
+        return guarantee;
+    }
+
+    public void setHasGuarantee(boolean guarantee){
+        this.guarantee = guarantee;
+    }
+
 
 }
