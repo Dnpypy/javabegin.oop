@@ -50,6 +50,7 @@ public class Main {
         electronicDepartment.addGoods(televisor);
         gameDepartment.addGoods(console);
 
+
         CommonVisitor  commonVisitor = new CommonVisitor("visitor1");
         VipVisitor vipVisitor = new VipVisitor("VipVisitor", 50);
 
