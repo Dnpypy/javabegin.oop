@@ -1,5 +1,6 @@
 package ru.javabegin.training.fastjava2.shop33.department;
 
+import ru.javabegin.training.fastjava2.shop32.goods.Televisor;
 import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
 import ru.javabegin.training.fastjava2.shop33.interfaces.GoodsInterface;
 import ru.javabegin.training.fastjava2.shop33.interfaces.StaffInterface;
@@ -16,9 +17,16 @@ public abstract class AbstractDepartment implements DepartmentInterfaces {
      * Список товаров
      */
 
+    public AbstractDepartment() {
+    }
+
+    public AbstractDepartment(String name) {
+        this.name = name;
+    }
+
     public String name;
-    ArrayList <GoodsInterface> goodsList = new ArrayList<GoodsInterface>();
-    ArrayList <StaffInterface> employeeList = new ArrayList<StaffInterface>();
+    private ArrayList<StaffInterface> employeeList = new ArrayList<StaffInterface>();
+    private ArrayList<GoodsInterface> goodsList = new ArrayList<GoodsInterface>();
 
     @Override
     public String getName() {
@@ -48,15 +56,13 @@ public abstract class AbstractDepartment implements DepartmentInterfaces {
     }
 
     public void addEmployee(StaffInterface staff) {
-        staff.setDepartment(this); // при добавлении сотрудника для него автометически прописывается департамент
+        staff.setDepartment(this);
         employeeList.add(staff);
     }
 
-    public void addGoods(GoodsInterface goods){
+    public void addGoods(GoodsInterface goods) {
         goods.setDepartment(this);
-        goodsList.add(goods); // при добавлении товара для него автометически прописывается департамент
+        goodsList.add(goods);
     }
 
 }
-
-

@@ -15,18 +15,21 @@ public class Consultant extends AbstractStaff {
         super(name, department, free);
     }
 
-    public Consultant(String consult) {
-        super(consult);
+    public Consultant(String name) {
+        super(name);
     }
 
-    public ConsultResult consult(VisitorInterfaces visitorInterfaces) {
-        super.setFree(false);
+    public void consult() {
 
-        return ConsultResult.BUY;
     }
 
     public void send() {
 
 
+    }
+
+    public ConsultResult consult(VisitorInterfaces visitor){
+        super.setFree(false);
+        return ConsultResult.BUY;
     }
 }

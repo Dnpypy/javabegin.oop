@@ -7,14 +7,19 @@ import ru.javabegin.training.fastjava2.shop33.interfaces.GoodsInterface;
  */
 public class VipVisitor extends AbstractVisitor {
 
-    // private String name; не нужно опеределять переменную она уже есть
-    // в родительском классе BaseVisitor
-    private float discount;
+    public VipVisitor(float discount){
+        super(discount);
+        this.discount = discount;
+    }
 
-    public VipVisitor(String vipVisitor1, int i) {
+    public VipVisitor(String name, float discount) {
+        super(name, discount);
+        this.discount = discount;
 
     }
 
+    // private String name; не нужно дублировать переменную, она уже есть в родительском классе Visitor
+    private final float discount;
 
     @Override
     public void buy(GoodsInterface goods) {

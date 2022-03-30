@@ -16,6 +16,10 @@ public class ElectronicDevice extends AbstractGoods implements ElectronicDeviceI
         super(name);
     }
 
+    public ElectronicDevice(double price, boolean guarantee, String model, String name) {
+        super(price, guarantee, model, name);
+    }
+
     @Override
     public void on() {
         //общая реализация

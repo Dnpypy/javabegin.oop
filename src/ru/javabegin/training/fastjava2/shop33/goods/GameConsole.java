@@ -11,7 +11,9 @@ public class GameConsole extends ElectronicDevice {
         super(name);
     }
 
-    public GameConsole(int i, String xbox) {
+    public GameConsole(String name, int ram) {
+        super(name);
+        this.ram = ram;
     }
 
 

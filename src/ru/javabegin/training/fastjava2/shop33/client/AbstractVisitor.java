@@ -9,8 +9,16 @@ import ru.javabegin.training.fastjava2.shop33.interfaces.VisitorInterfaces;
  */
 public abstract class AbstractVisitor implements VisitorInterfaces {
 
-    private String name;
+    public AbstractVisitor(String name) {
+    }
 
+    public AbstractVisitor(String name, float discount) {
+    }
+
+    public AbstractVisitor(float discount) {
+    }
+
+    private String name;
 
     /**
      * можно передать в этот метод любой из товаров

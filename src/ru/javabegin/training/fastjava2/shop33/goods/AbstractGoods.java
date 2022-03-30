@@ -1,6 +1,5 @@
 package ru.javabegin.training.fastjava2.shop33.goods;
 
-import ru.javabegin.training.fastjava2.shop33.department.AbstractDepartment;
 import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
 import ru.javabegin.training.fastjava2.shop33.interfaces.GoodsInterface;
 
@@ -14,28 +13,28 @@ public abstract class AbstractGoods implements GoodsInterface {
     public static final int DEFAULT_GUARANTEE = 2;
 
     private double price;
-    private boolean guarantee;
+    private boolean hasGuarantee;
     private String name;
     private DepartmentInterfaces department;
     private String company;
+
+    public AbstractGoods() {
+    }
 
     public AbstractGoods(String name) {
         this.name = name;
     }
 
-    public AbstractGoods() {
-    }
-
-    public AbstractGoods(double price, boolean guarantee, String name, String company) {
+    public AbstractGoods(double price, boolean hasGuarantee, String name, String company) {
         this.price = price;
-        this.guarantee = guarantee;
+        this.hasGuarantee = hasGuarantee;
         this.name = name;
         this.company = company;
     }
 
-    public static void print(){
-        System.out.println("DEFAULT_GUARANTEE = " + DEFAULT_GUARANTEE);
+    public AbstractGoods(double price, boolean guarantee, String name, String company, int ram) {
     }
+
 
     @Override
     public String getName() {
@@ -50,7 +49,6 @@ public abstract class AbstractGoods implements GoodsInterface {
     public DepartmentInterfaces getDepartment() {
         return department;
     }
-
 
     @Override
     public void setDepartment(DepartmentInterfaces department) {
@@ -77,11 +75,11 @@ public abstract class AbstractGoods implements GoodsInterface {
 
     @Override
     public boolean hasGuarantee() {
-        return guarantee;
+        return hasGuarantee;
     }
 
     public void setHasGuarantee(boolean guarantee){
-        this.guarantee = guarantee;
+        this.hasGuarantee = guarantee;
     }
 
 

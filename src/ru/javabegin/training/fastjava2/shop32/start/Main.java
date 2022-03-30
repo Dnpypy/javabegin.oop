@@ -32,7 +32,7 @@ public class Main {
 
         Televisor televisor = new Televisor("Samsung");
         televisor.selectChannel();
-        televisor.selectChannel(12, "Match TV");
+
 
     }
 }

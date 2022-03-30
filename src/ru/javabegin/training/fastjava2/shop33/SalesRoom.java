@@ -1,7 +1,6 @@
 package ru.javabegin.training.fastjava2.shop33;
 
 import ru.javabegin.training.fastjava2.shop33.department.ElectronicDepartment;
-import ru.javabegin.training.fastjava2.shop33.department.GameDepartment;
 import ru.javabegin.training.fastjava2.shop33.interfaces.DepartmentInterfaces;
 import ru.javabegin.training.fastjava2.shop33.interfaces.VisitorInterfaces;
 import ru.javabegin.training.fastjava2.shop33.staff.Administrator;
@@ -19,23 +18,25 @@ import java.util.ArrayList;
  *
  * Вместо базовых типов(BaseDepartment, BaseVisitor) тут указываем интерфейсы:
  * DepartmentInterfaces, VisitorInterfaces
- *
+ * // ArrayList<DepartmentInterfaces> в каждом департаменте свои сотрудники
  */
 public class SalesRoom {
 
     public final String SHOP_NAME = "technodom";
 
-    private ArrayList<DepartmentInterfaces> departmentList; // в каждом департаменте свои сотрудники
+    private final ArrayList<DepartmentInterfaces> departmentList = new ArrayList<DepartmentInterfaces>();
 
-    private String name;
+    private final ArrayList<VisitorInterfaces> visitorList = new ArrayList<VisitorInterfaces>();
 
-    private ArrayList<VisitorInterfaces> visitorList;
-
-    private Administrator administrator;
-
-    File file;
-
-    public void add(DepartmentInterfaces interfaces) {
+    public ArrayList<DepartmentInterfaces> getDepartmentList() {
+        return departmentList;
     }
 
+    public void addDepartment(DepartmentInterfaces department) {
+        departmentList.add(department);
+    }
+
+    public void addVisitor(VisitorInterfaces visitor){
+        visitorList.add(visitor);
+    }
 }

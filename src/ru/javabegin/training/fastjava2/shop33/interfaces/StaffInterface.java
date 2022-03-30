@@ -1,7 +1,5 @@
 package ru.javabegin.training.fastjava2.shop33.interfaces;
 
-import ru.javabegin.training.fastjava2.shop33.department.AbstractDepartment;
-
 /**
  * Каждый сотрудник будет иметь имя
  * Сотрудник должен предоставлять отдел, где он работает
@@ -15,8 +13,5 @@ public interface StaffInterface {
 
     boolean isFree();
 
-    void setDepartment(DepartmentInterfaces departmentInterfaces);
-
+    void setDepartment(DepartmentInterfaces department);
 }
-
-

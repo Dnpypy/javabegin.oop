@@ -1,6 +1,6 @@
 package ru.javabegin.training.fastjava2.shop32.goods;
 
-import ru.javabegin.training.fastjava2.shop32.department.AbstractDepartment;
+import ru.javabegin.training.fastjava2.shop32.interfaces.DepartmentInterfaces;
 import ru.javabegin.training.fastjava2.shop32.interfaces.GoodsInterface;
 
 
@@ -12,12 +12,6 @@ public abstract class AbstractGoods implements GoodsInterface {
 
     public static final int DEFAULT_GUARANTEE = 2;
 
-    private double price;
-    private boolean hasGuarantee;
-    private String name;
-    private AbstractDepartment department;
-    private String company;
-
     public AbstractGoods(String name) {
         this.name = name;
     }
@@ -25,9 +19,14 @@ public abstract class AbstractGoods implements GoodsInterface {
     public AbstractGoods() {
     }
 
-    public static void print(){
-        System.out.println("DEFAULT_GUARANTEE = " + DEFAULT_GUARANTEE);
+    public AbstractGoods(double price, boolean guarantee, String model, String name) {
     }
+
+    private double price;
+    private boolean hasGuarantee;
+    private String name;
+    private DepartmentInterfaces department;
+    private String company;
 
     @Override
     public String getName() {
@@ -39,11 +38,11 @@ public abstract class AbstractGoods implements GoodsInterface {
     }
 
     @Override
-    public AbstractDepartment getDepartment() {
+    public DepartmentInterfaces getDepartment() {
         return department;
     }
 
-    public void setDepartment(AbstractDepartment department) {
+    public void setDepartment(DepartmentInterfaces department) {
         this.department = department;
     }
 

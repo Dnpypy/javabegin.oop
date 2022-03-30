@@ -20,7 +20,8 @@ public abstract class AbstractStaff implements StaffInterface {
     public AbstractStaff(String name, DepartmentInterfaces department, boolean free) {
     }
 
-    public AbstractStaff(String den) {
+    public AbstractStaff(String name) {
+
     }
 
     @Override
